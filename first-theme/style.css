@@ -1,0 +1,122 @@
+/* Styles for my first Wordpress site
+Name: First Theme
+Author:Fritz
+Date: June 2024
+*/
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background: rgb(119, 164, 192);
+}
+
+header {
+    background: rgb(84, 140, 84);
+}
+
+#top {
+    height: 60px;
+    background: rgb(50, 84, 50);
+}
+
+#inner-header{
+    max-width: 1200px;
+    height: 100px;
+    background-color: rgba(127, 255, 212, 0.331);
+    margin: 0 auto;
+}
+
+
+/* this is our background image */
+
+#hero {
+    height: 400px;
+    background: darkgreen;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+main {
+    width: 62%;
+    float: left;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 300px;
+    background: grey;
+    clear: both;
+}
+
+/* typography */
+
+p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+h2 {
+    color: rgb(0, 119, 255);
+}
+
+.title {
+    font-size: 2em;
+    color: white !important;
+}
+
+b {
+    color: rgb(0, 119, 255);
+}
+
+.block a{
+    margin-bottom: 40px;
+}
+
+
+/* form css */
+
+#commentform {
+border:1px solid white;
+padding: 10px;
+margin:10px 0 20px 0;
+}
+
+.comment-notes {
+    font-size: .9em;
+    font-style: italic;
+    margin-bottom: 6px;
+    color: rgb(76, 76, 76) !important;
+}
+
+.posted-meta {
+    display: inline-block;
+    font-style:italic;
+}
+
+label {
+    display: block;
+}
+
+.comment-form-cookies-consent label {
+    display: inline;
+}
+
+.comment-form p {
+    margin-bottom: 10px;
+}
+
+.commentlist {
+    margin: 10px 0 15px 30px;
+
+}
