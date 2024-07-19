@@ -82,6 +82,11 @@ header {
     margin: 20px auto;
 }
 
+.error404 #wrapper,
+.search #wrapper {
+	margin: 140px auto 0 auto;
+}
+
 main {
     width: 62%;
     float: left;
@@ -278,7 +283,7 @@ label {
 	.primary-nav {
 		width: 100%;
 		float: none;
-		background-color: brown; /* change the menu color */
+		background-color: rgb(84, 140, 84); /* change the menu color */
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
 		display: block;
 		height: 50px;
