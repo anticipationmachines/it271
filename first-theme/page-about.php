@@ -1,6 +1,6 @@
 <?php
 get_header();
-/* Template Name: Tours */ 
+/* Template Name: About */ 
 ?>
 
 <div id="hero">
@@ -12,9 +12,6 @@ get_header();
         <main>
     <!-- if we have any posts or pages, show them -->
 <?php if(have_posts()) : ?>
-    <?php if(has_post_thumbnail()) : ?>
-        <?php  the_post_thumbnail(); ?>
-        <?php endif ?>
     <!-- show posts by using a while loop -->
 
     <?php while(have_posts()) : the_post() ; ?>
@@ -29,13 +26,12 @@ get_header();
 
     <aside id="secondary" class="widget-area">
 
-<?php dynamic_sidebar('sidebar-tours'); ?>
-<?php dynamic_sidebar('sidebar-tours-specials'); ?>
+<?php dynamic_sidebar('sidebar-about'); ?>
 
 </aside>
     </div>
     <!-- close wrapper -->
-    <?php dynamic_sidebar('sidebar-buy'); ?>
+
     <?php
 get_footer();
 ?>

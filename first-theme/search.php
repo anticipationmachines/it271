@@ -59,7 +59,7 @@ $allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $
     </main>
     <!-- close main -->
 
-    <aside>this is my search.php page!</aside>
+    <?php get_sidebar(); ?>
 
     </div>
     <!-- close wrapper -->

@@ -2,6 +2,11 @@
 get_header();
 ?>
 
+<div id="hero">
+<img src="https://frirod1.dreamhosters.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg" alt="yellowstone">
+</div>
+<!-- end hero -->
+
     <div id="wrapper">
         <main>
     <!-- if we have any posts or pages, show them -->
@@ -50,7 +55,11 @@ get_header();
     </main>
     <!-- close main -->
 
-    <aside>this is my index.php page!</aside>
+
+
+    <?php get_sidebar(); ?>
+
+    
 
     </div>
     <!-- close wrapper -->

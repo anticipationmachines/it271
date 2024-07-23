@@ -12,15 +12,17 @@ Date: June 2024
 }
 
 body {
-    background: rgb(119, 164, 192);
+    /* background: rgb(119, 164, 192); */
 }
 
 header {
-    background: rgb(84, 140, 84);
+    background: white;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	padding: 0 0 10px 0;
+	border-bottom:1px solid rgb(50, 84, 50);
 }
 
 #top {
@@ -31,10 +33,51 @@ header {
 
 #inner-header{
     max-width: 1200px;
-    background-color: rgba(127, 255, 212, 0.331);
+    /* background-color: rgba(127, 255, 212, 0.331); */
     margin: 0 auto;
 	padding: 10px 20px 10px 0;
 	clear: both;
+}
+
+.inner-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+	padding: 10px 0;
+}
+
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+	width: 100%;
+	height: auto;
+	margin-bottom:15px;
+}
+
+.row {
+	overflow: hidden;
+	margin-bottom:20px;
+}
+
+.third {
+	width:31.91%;
+	float:left;
+	margin-right:2.12%;
+	padding: 0 1%;
+}
+
+#wrapper .third {
+	padding: 0;
+}
+
+.third:last-of-type {
+	margin-right: 0;
+}
+
+.col8 {
+	float:left;
+	width:48.93%
+}
+
+.col8:last-of-type {
+	float:right
 }
 
 /* classes and ids */
@@ -47,11 +90,15 @@ header {
 	float: right;
 }
 
-
-/* this is our background image */
-#hero {
-	background: red;
+img {
+	max-width:100%;
+	height: auto;
 }
+
+#hero {
+	background: white;
+}
+
 
 .home #hero {
     background-image: url(https://frirod1.dreamhosters.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
@@ -65,21 +112,22 @@ header {
 
 #hero img {
 	display: none;
+	max-width: 100%;
 }
 
 .inner-page #hero {
     background-image: url(https://frirod1.dreamhosters.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg);
 	background-attachment: fixed;
 	background-size: 100%;
-	background-position: 0 100px;
-	min-height: 350px;
+	background-position: 0 110px;
+	min-height: 370px;
 	max-width: 100%;
 	background-repeat: no-repeat;
 }
 
 #wrapper {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto 40px auto;
 }
 
 .error404 #wrapper,
@@ -95,9 +143,6 @@ main {
 aside {
     float:right;
     width: 35%;
-    height: 400px;
-    background: orange;
-
 }
 
 
@@ -107,8 +152,7 @@ article {
 }
 
 footer {
-    height: 300px;
-    background: grey;
+    background: rgb(180, 180, 180);
     clear: both;
 }
 
@@ -124,6 +168,19 @@ footer {
 	float:left;
 	list-style: none;
 	margin-left: 15px;
+}
+
+.inner-specials {
+	margin-top: 20px;
+	border: 2px solid rgb(0, 119, 255);
+	background: white;
+	border-radius:3px;
+	padding: 3%;
+}
+
+.inner-buy {
+	clear: both;
+	background-color: #ddd;
 }
 
 #site-navigation li:last-of-type{
@@ -144,7 +201,7 @@ margin-right: 15px;
 	#site-navigation li:hover .sub-menu {
 		display: block;
 		position: absolute;
-		background: white;
+		background: rgb(73, 118, 215);
 		padding: 5px ;
 		width: 180px;
 	}
@@ -152,17 +209,141 @@ margin-right: 15px;
 	#site-navigation li:hover .sub-menu li {
 		margin-left: 0;
 		float: none;
+		line-height:1.4;
 	}
 
 /* typography */
 
+.home h1 {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+.inner-footer h2 {
+	font-size:3.4em;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+
+.inner-footer ul {
+	height: 60px;
+	line-height: 60px;
+	font-size: .875em;
+	list-style: none;
+}
+
+.inner-footer li {
+	float: left;
+	margin-right:25px;
+}
+
+.inner-specials {
+	margin-top: 20px;
+	padding: 3%;
+	background-color: rgb(121, 181, 249);
+}
+
+.inner-footer .third {
+	text-align: center;
+}
+
+
+.third a {
+	display:block;
+	color:rgb(0, 119, 255);
+	font-style:italic;
+	margin-top:5px;
+	font-size:1.1em;;
+}
+
+.row p {
+	font-size: .92em;
+}
+
+.third h3, .col8 h3{
+	font-size: 1.8em;
+	margin-bottom: 10px;
+		color: rgb(0, 119, 255);
+}
+
+.inner-widget h3 {
+	background-color: rgb(84, 140, 84);
+	font-size: 1.4em;
+	padding:3%;
+	color: white;
+	margin-bottom:10px;
+}
+
+.inner-tours {
+	background-color: rgb(180, 180, 180);
+	padding: 3%;
+}
+
+.inner-tours h3 {
+	font-size: 1.4em;
+	color: rgb(0, 119, 255);
+
+}
+
+aside ul {
+	margin-left:5%;
+	margin-bottom:8px;
+	list-style-type: none;
+}
+
+aside li a{
+	color:black;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+a:hover{
+	text-decoration: none;
+	color:rgb(84, 140, 84);
+}
+
+nav a:hover{
+	color:rgb(121, 181, 249);
+	font-weight: 600;
+}
+
 p {
     margin-bottom: 20px;
-    color: white;
+    color: rgb(94, 94, 94);
+}
+
+.third p {
+	color: grey;
+}
+
+p + .block {
+	margin: -10px 0 10px 0;
+}
+
+.title {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.meta span {
+	display: block;
+	font-style: italic;
 }
 
 h2 {
     color: rgb(0, 119, 255);
+	margin-bottom: 10px;
+}
+
+.home h2 {
+	text-align: center;
+	font-size: 2.4em;
 }
 
 .title {
@@ -223,6 +404,19 @@ label {
 /* M E D I A   Q U E R I E S */
 
 @media screen and (max-width:1450px) {
+
+	#inner-header {
+		padding: 10px 24px 10px 24px;
+	}
+
+	#wrapper {
+		max-width: 1200px;
+		margin: 24px;
+
+	}
+
+
+	
 	.home #hero {
 		background-image: none;
 		margin-top: 100px;

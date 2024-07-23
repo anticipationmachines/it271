@@ -2,6 +2,11 @@
 get_header();
 ?>
 
+<div id="hero">
+<img src="https://frirod1.dreamhosters.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg" alt="yellowstone">
+</div>
+<!-- end hero -->
+
     <div id="wrapper">
         <main>
     <!-- if we have any posts or pages, show them -->
@@ -18,6 +23,17 @@ get_header();
         <span class="posted-meta"> <b>Posted on: </b><?php  the_time('F j, Y g:i a'); ?></span>
         </div>
         <!-- close meta -->
+         
+        <div class="thumbnail">
+<?php if(has_post_thumbnail()) : ?>
+    <a href="<?php the_permalink(); ?>">
+        <?php  the_post_thumbnail(); ?>
+        </a>
+        <?php endif ?>
+
+    </div>
+    <!-- close thumbnail -->
+
     <?php the_content() ; ?>
 
     </article>
@@ -32,6 +48,8 @@ get_header();
     </main>
     <!-- close main -->
      <a href="blog"><button>Blog Home</button></a>
+
+     <?php get_sidebar(); ?>
 
     </div>
     <!-- close wrapper -->
